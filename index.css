@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("/Sidebar/keyboard-image.jpg");  
+   background-size: cover;
+}
+
+.lucide{
+    color:#fff;
+}
+.lucide:hover{
+cursor: pointer;
+animation: size 1s linear  both;
+}
+@keyframes size{
+    10%{
+        width:23px;
+        height:23px;
+    }
+    50%{
+        width:22px;
+        height:22px;
+
+    }
+    100%{
+        width:20px;
+        height: 20px;
+    }
+}
+.sidebar
+{
+    max-width:200px;
+    width:100%;
+border:1px solid white;
+height:100vh;
+position: relative;
+margin-left:-200px;
+}
+.ani{
+    animation:slide 1s linear   both;  
+}
+@keyframes slide {
+    10%{
+        margin-left: -180px;
+    }
+    50%{
+        margin-left: -100px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+    
+}
+.heading{
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.heading svg{
+    color:rgb(156, 147, 147);
+}
+h1{
+    color:#fff;
+    font-size:20px;
+    
+}
+.list{
+    padding-top: 20px;
+  
+
+}
+.list li{
+    display:flex;
+    flex-direction: row;
+    width:200px;
+    height:40px;
+    padding-left: 20px;
+align-items: center;
+    list-style: none;
+}
+ .happy:hover{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+a{
+    text-decoration: none;
+    padding-left:10px;
+    color:#fff;
+   
+}
+.social-icons ul{
+    display:flex;
+    flex-direction:row;
+    /* border:1px solid #fff; */
+    width:200px;
+    position: absolute;
+    bottom: 20px;
+    left:-20px;
+}
